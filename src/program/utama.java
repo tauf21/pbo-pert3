@@ -18,8 +18,8 @@ public class utama {
         System.out.print("Masukan warna Hp : ");
         Hp.setWarna (s.nextLine());
         System.out.print("Masukan Harga Hp : ");
-        double diskon = s.nextDouble();
-        Hp.setHarga(diskon);
+        double sHarga = s.nextDouble();
+        Hp.setHarga(sHarga);
         //output
         System.out.println("=================================");
         System.out.println("Daftar Harga Ponsel & Spesifikasi");
@@ -27,9 +27,9 @@ public class utama {
         System.out.println("Merk Hp \t: " + Hp.getMerk());
         System.out.println("Tipe Hp \t: "+ Hp.getTipe());
         System.out.println("Warna Hp \t: "+ Hp.getWarna());
-        System.out.println("Harga Hp \t: " + diskon);
-        System.out.println("Harga Sebelum Diskon \t: "+ diskon);
-        System.out.println("Harga Sesudah Diskon \t: "+ Hp.getHarga());
+        Hp.HargaDiskon();
+        System.out.println("Harga Sebelum Diskon \t: "+ Hp.getHarga());
+        Hp.keterangan();
     }
     
 }
