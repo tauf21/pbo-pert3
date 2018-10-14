@@ -20,7 +20,7 @@ public class Handphone {
         this.warna=colour;
     }
     public void setHarga(double harga){
-        this.harga=harga -(harga*10/100);
+        this.harga=harga;
     }
     //getter
     public String getMerk(){
@@ -34,6 +34,14 @@ public class Handphone {
     }
     public double getHarga(){
         return harga;
-    } 
+    }
+    // Method tambahan
+    public void HargaDiskon() {
+        this.harga = harga-(harga*10/100);
+        System.out.println("Harga Hp \t: " + harga);
+    }
+    public void keterangan(){
+        System.out.println("Hargas Sesudah Diskon \t: "+ getHarga());
+    }
    
 }
